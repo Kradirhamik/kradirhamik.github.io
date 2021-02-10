@@ -47,7 +47,7 @@ jobs:
         # deploy_branch: gh-pages
         deploy_branch: main
         # The folder in which `ng build` provides its output. This is the folder which will be deployed to the `deploy_branch`.
-        angular_dist_build_folder: ./dist/website
+        angular_dist_build_folder: dist/website
         # If the action should run 'ng lint'
         run_lint: true
         # Will not fail the step if anything fails
