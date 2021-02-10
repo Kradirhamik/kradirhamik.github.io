@@ -25,9 +25,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd website
-      - run: npm ci
-      - run: npm run build --if-present
+#       - run: cd website
+#       - run: npm ci
+#       - run: npm run build --if-present
       # - run: npm test
 
       - name: Angular Deploy gh-pages Actions
@@ -38,7 +38,7 @@ jobs:
           # Github access token token used to deploy on gh_pages. You can find it on Github.
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
           # The directory of the angular project, in which all the commands will run
-          angular_project_dir: ./
+          angular_project_dir: ./website
           # Build configuration for the angular app
           build_configuration: production
           # base href for the app
